@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Quiz Game</title>
+    <link rel="stylesheet" href="assignment.css">
+   <style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background: linear-gradient(135deg, #02f8ae 50%, #6b046e 100%);
+        overflow: hidden;
+        color: rgb(101, 224, 183);
+      }
+      
+      .container {
+        text-align: center;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      }
+      
+      h1 {
+        font-size: 60px;
+        margin: 20;
+        opacity: 30;
+        animation: fadeIn 2s forwards;
+        color: #dd6b6b;
+      }
+      
+      .intro-text {
+        color: #dd6b6b;
+        font-size: 1.2em;
+        margin: 10px 0 20px;
+      }
+      
+      button {
+        padding: 12px 24px;
+        font-size: 16px;
+        color: #db5d5d;
+        background-color: #daff08;
+        border: none;
+        border-radius: 8px;
+        cursor: crosshair;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+      }
+      
+      button:hover {
+        background-color: #0b0c09;
+        transform: scale(1.05);
+      }
+      
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+        }
+      }
+      
+      @keyframes pulse {
+        0%, 100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+      }
+      
+      body {
+          font-family: Arial, sans-serif;
+          transition: background-color 0.3s, color 0.3s;
+      }
+      
+      .container {
+          text-align: center;
+          padding: 50px;
+      }
+      
+      /* Light theme styles */
+      .light-theme {
+          background-color: #ffffff;
+          color: #000000;
+      }
+      
+      .light-theme button {
+          background-color: #007bff;
+          color: white;
+      }
+      
+      /* Dark theme styles */
+      .dark-theme {
+          background-color: #e25959;
+          color: #ffffff;
+      }
+      
+      .dark-theme button {
+          background-color: #0056b3;
+          color: white;
+  
+      }
+      h2{ color: #db5d5d;
+  
+
+      }
+ 
+      </style>
+</head>
+<body>
+    <div id="difficulty-selection">
+        <h2>Select Difficulty</h2>
+        <button onclick="startGame('easy')">Easy</button>
+        <button onclick="startGame('medium')">Medium</button>
+        <button onclick="startGame('hard')">Hard</button>
+    </div>
+
+    <div id="name-input" style="display:none;">
+        <h2>Enter Your Name</h2>
+        <input type="text" id="player-name" placeholder="Your Name">
+        <button onclick="submitName()">Start Quiz</button>
+    </div>
+
+    <div id="quiz" style="display:none;">
+        <h2 id="question-text"></h2>
+        <div id="timer">Time left: <span id="time-remaining"></span></div>
+        <div id="options"></div>
+        <button onclick="submitAnswer()">Submit Answer</button>
+        <p id="feedback" style="display: none; font-weight: bold;"></p>
+    </div>
+
+    <div id="results" style="display:none;">
+        <h2>Quiz Results</h2>
+        <div id="score-summary"></div>
+        <button onclick="restartGame()">Play Again</button>
+        <button onclick="changeDifficulty()">Change Difficulty</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
