@@ -5,7 +5,7 @@
   align-items: center;
   height: 100vh;
   margin: 0;
-  background: linear-gradient(135deg, #02f8ae 50%, #6b046e 100%);
+  background: linear-gradient(135deg, #f002f8 50%, #21f0de 100%);
   overflow: hidden;
   color: rgb(101, 224, 183);
 }
@@ -34,7 +34,7 @@ button {
   padding: 12px 24px;
   font-size: 16px;
   color: #d35555;
-  background-color: #daff08;
+  background-color: #086bff;
   border: none;
   border-radius: 8px;
   cursor: crosshair;
