@@ -6,4 +6,8 @@ Tick Tock: Each question has a time limit, adding a thrilling twist to the chall
 Show Your Skills: Solve the problem and enter your answer.
 Instant Feedback: Get immediate feedback on your answer, whether it's a hit or a miss.
 Level Up: As you progress, the difficulty increases, keeping you engaged and learning.
+Technologies Used
+HTML: For structuring the webpage.
+CSS: For styling and layout.
+JavaScript: For game logic and interactivity.
 
