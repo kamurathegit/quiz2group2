@@ -1,4 +1,4 @@
-Ready to put your math skills to the test?
+Are you ready to put your math prowess to the test?
 Our Math Quiz game is more than just a test; it's an exciting journey through the world of numbers.
 How it works:
 Start the Fun: Launch the game and get ready to tackle a series of challenging math problems.
